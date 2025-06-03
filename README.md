@@ -48,7 +48,6 @@ install.packages("devtools")
 devtools::install(".")
 library(miicsearchscore)
 ```
----
 
 ### ✅ Option 2: Install only the R package
 
@@ -67,8 +66,6 @@ library(miicsearchscore)
 
 > ⚠️ This method installs only the R package — **not** the `benchmark/` folder.
 
----
-
 ## 🧠 How it works
 
 The algorithm proceeds in two steps:
@@ -76,11 +73,15 @@ The algorithm proceeds in two steps:
 ### Step 0: MIIC inference
 
 ```r
-adj_miic <- miic(data,
+miic_result <- miic(data,
                  latent = "orientation",
                  propagation = TRUE,
                  consistent = "orientation",
                  n_threads = n_threads)
+summary <- miic_result$summary
+summary <- summary[summary$type == "P", ]
+hash_table <- new.env()
+adj_miic <- miic_result$adj_matrix
 ```
 
 ### Step 1: Node-level pruning and conditioning set selection
@@ -139,7 +140,7 @@ miicsearchscore/
 
 Benchmarks for reproducing **Figures 2, 3, E.2, E.3, and Table E.1** of the paper are provided in the `benchmark/` folder. Before running them, **make sure you are in the`benchmark/` directory**.
 
-🔧 0. Install required R packages
+### 🔧 0. Install required R packages
 
 Before running any simulation, make sure to install the required R packages (with exact versions) using:
 
@@ -149,7 +150,7 @@ Rscript install_requirements.R
 
 This will install all packages listed in requirements.txt, including those from CRAN and Bioconductor.
 
-1. Simulate the graph structures: **DAG, CPDAG, and PAG**
+### 1. Simulate the graph structures: **DAG, CPDAG, and PAG**
 
 You can run both simulations (continuous and categorical) at once with:
 
@@ -167,7 +168,7 @@ Rscript simulations/categorical/simulate_dag_cpdag_pag_categorical.R
 
 All output datasets are saved automatically in the `simulated_data/graphs/` directory.
 
-🚀 2. Run MIIC_search&score benchmark simulations
+### 🚀 2. Run MIIC_search&score benchmark simulations
 
 You can launch **all benchmark simulations** at once using the main launcher:
 
@@ -176,8 +177,6 @@ Rscript MIIC_search_and_score/run_all.R
 ```
 
 This will execute all benchmark pipelines across continuous and categorical scenarios.
-
----
 
 ⚙️ Alternatively, run each simulation type separately:
 
@@ -205,20 +204,16 @@ Rscript MIIC_search_and_score/categorical/normal/run_all_categorical.R
 Rscript MIIC_search_and_score/categorical/bootstrap/run_all_categorical_bootstrap.R
 ```
 
----
-
 📁 **Output directory**
 
 All output graphs are saved automatically in the `results/` directory.
-
----
 
 🧠 **Tips**
 
 - If you want to run only a subset of benchmarks, you can edit the `run_all.R` file and comment out specific simulation blocks.
 - In each subdirectory of `MIIC_search_and_score` (e.g., `categorical/bootstrap`), you will find additional scripts that generate job submission files for HPC environments using PBS or SLURM. These scripts typically start with `generate_` and `lauch_` and are intended to help launch large-scale benchmark runs efficiently on a cluster.
 
-📦 3. (Optional) Generate data for external baseline algorithms
+### 📦 3. (Optional) Generate data for external baseline algorithms
 
 To run other benchmark algorithms (developed in different languages such as **Python** or **Matlab**), you'll need to generate the corresponding datasets from the simulated graphs.
 
@@ -242,7 +237,7 @@ You can edit `run_all_data.R` to comment out lines corresponding to data types y
 
 All output datasets are saved automatically in the `simulated_data/` directory.
 
-🧪 4. (Optional) Run other baseline algorithms
+### 🧪 4. (Optional) Run other baseline algorithms
 
 The `baselines/` directory contains benchmarking scripts for external algorithms implemented in Python, Matlab, and Java. These include:
 
@@ -259,7 +254,7 @@ For **M3HC** (Matlab) and **GFCI** (Java), only local execution scripts are prov
 
 All output graphs are saved automatically in the `results/` directory.
 
-📈 5. (Optional) Evaluate results and generate benchmark plots
+### 📈 5. (Optional) Evaluate results and generate benchmark plots
 
 After running the benchmark simulations, you can compute performance metrics (e.g., Precision, Recall, F-score) and generate comparative plots by executing the following script:
 
@@ -278,9 +273,7 @@ All results are saved automatically in the `results/` directory:
 - `results/metrics/`: computed performance metrics (Precision, Recall, F-score)
 - `results/plots/`: benchmark figures
 
----
-
-6. Reproduce Table E.1 – Toy Models Summary
+### 6. Reproduce Table E.1 – Toy Models Summary
 
 To reproduce the toy model summary table (Table E.1), simply run the following script:
 
@@ -304,5 +297,3 @@ If you use this code, please cite:
   [Website](http://kinefold.curie.fr/isambertlab/index.html)
 
 Contributions and feedback are welcome — open an [issue](https://github.com/miicTeam/miicsearchscore/issues) or a [pull request](https://github.com/miicTeam/miicsearchscore/pulls).
-
----
