@@ -1,0 +1,24 @@
+Package: miicsearchscore
+Title: Search-and-Score Causal Discovery with Latent Variables using
+    Multivariate Information
+Version: 1.0.0
+Authors@R: c(
+    person("Nikita", "Lagrange", , "nikita.lagrange@curie.fr", role = c("aut", "cre")),
+    person("Hervé", "Isambert", , "herve.isambert@curie.fr", role = "ctb")
+  )
+Description: Provides an R implementation of the MIIC_search&score
+    algorithm for causal discovery in the presence of latent variables.
+    This method combines structure learning for partial ancestral graphs
+    (PAGs) with a novel score-based orientation strategy based on
+    multivariate mutual information.
+License: GPL (>= 3)
+Imports: 
+    container,
+    digest,
+    miic
+Remotes:
+    nikitalagrange/miic_R_package
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1

@@ -1,0 +1,128 @@
+# This file lists the R packages required to run the scripts located in the "benchmark" directory,
+# along with the exact versions used during development.
+# Iinstall these specific versions using a script such as install_requirements.R.
+#
+# Format: two columns, tab- or space-separated
+# - Package: the name of the R package
+# - Version: the exact version used
+#
+# Example usage:
+#   Rscript install_requirements.R requirements.txt
+#
+# Notes:
+# - Base R packages (e.g. stats, utils) are excluded
+# - Bioconductor packages (e.g. graph, RBGL) will be installed via BiocManager
+# - CRAN packages will be installed via devtools::install_version
+Package Version
+colorspace 2.0.3
+ggsignif 0.6.4
+ellipsis 0.3.2
+corpcor 1.6.10
+fs 1.5.2
+clue 0.3.61
+rstudioapi 0.14
+httpcode 0.3.0
+ggpubr 0.6.0
+remotes 2.4.2
+fansi 1.0.3
+extrafont 0.19
+cachem 1.0.6
+robustbase 0.95.0
+knitr 1.40
+pkgload 1.3.2
+jsonlite 1.8.3
+broom 1.0.4
+Rttf2pt1 1.3.12
+cluster 2.1.3
+sfsmisc 1.1.13
+graph 1.74.0
+shiny 1.7.3
+BiocManager 1.30.22
+readr 2.1.3
+backports 1.4.1
+fastmap 1.1.0
+cli 3.4.1
+later 1.3.0
+hrbrthemes 0.8.0
+htmltools 0.5.7
+prettyunits 1.1.1
+igraph 1.3.5
+gtable 0.3.1
+glue 1.6.2
+reshape2 1.4.4
+dplyr 1.0.10
+Rcpp 1.0.13.1
+carData 3.0.5
+fontquiver 0.2.1
+vctrs 0.6.5
+crul 1.4.0
+extrafontdb 1.0
+xfun 0.34
+stringr 1.5.1
+ps 1.7.2
+ggm 2.5
+mime 0.12
+miniUI 0.1.1.1
+lifecycle 1.0.4
+devtools 2.4.5
+rstatix 0.7.2
+container 1.0.5
+DEoptimR 1.0.11
+zoo 1.8.11
+scales 1.3.0
+hms 1.1.2
+promises 1.2.0.1
+RBGL 1.72.0
+RColorBrewer 1.1.3
+fontLiberation 0.1.0
+quantmod 0.4.26
+curl 4.3.3
+memoise 2.0.1
+ggplot2 3.4.3
+gdtools 0.3.5
+bdsmatrix 1.3.6
+fastICA 1.2.3
+stringi 1.7.8
+fontBitstreamVera 0.1.1
+TTR 0.24.4
+BiocGenerics 0.42.0
+pkgbuild 1.4.0
+pcalg 2.7.7
+rlang 1.1.3
+pkgconfig 2.0.3
+systemfonts 1.0.4
+evaluate 0.18
+lattice 0.20.45
+purrr 1.0.1
+htmlwidgets 1.5.4
+processx 3.8.0
+tidyselect 1.2.1
+plyr 1.8.8
+magrittr 2.0.3
+R6 2.5.1
+generics 0.1.3
+profvis 0.3.7
+DBI 1.1.3
+pillar 1.9.0
+withr 3.0.1
+xts 0.14.0
+abind 1.4.5
+tibble 3.1.8
+car 3.1.2
+crayon 1.5.2
+bnlearn 4.8.1
+gfonts 0.2.0
+utf8 1.2.2
+tzdb 0.3.0
+rmarkdown 2.18
+urlchecker 1.0.1
+usethis 3.1.0
+data.table 1.14.4
+callr 3.7.3
+infotheo 1.2.0.1
+digest 0.6.30
+xtable 1.8.4
+tidyr 1.3.0
+httpuv 1.6.6
+munsell 0.5.1
+sessioninfo 1.2.2
