@@ -174,7 +174,7 @@ Rscript simulations/categorical/simulate_dag_cpdag_pag_categorical.R
 
 All output datasets are saved automatically in the `simulated_data/graphs/` directory.
 
-### 🚀 2. Run MIIC_search&score benchmark simulations
+### 🚀 2. Run 🔴 MIIC_search&score and 🔵 MIIC benchmark simulations
 
 You can launch **all benchmark simulations** at once using the main launcher:
 
@@ -247,12 +247,12 @@ All output datasets are saved automatically in the `simulated_data/` directory.
 
 The `baselines/` directory contains benchmarking scripts for external algorithms implemented in Python, MATLAB, and Java. These include:
 
-- **DAGGNN** (Python) — [`4ff8775`](https://github.com/ronikobrosly/DAG_from_GNN/commit/4ff8775f46cc626fad464e53b2002128a02c9a68)
-- **FCI** (Python) — [`9689c1b`](https://github.com/py-why/causal-learn/commit/9689c1bdc468847729eacf0921b76f598161ae16)
-- **GFCI** (Java, via py-tetrad) — [`ea7cefb`](https://github.com/cmu-phil/py-tetrad/commit/ea7cefb12796d26337a0c0f2f7bd4deb470ce523)
-- **M3HC** (MATLAB) — [`a829193`] (https://github.com/mensxmachina/M3HC/commit/a82919329608d1d6482f476873ec559b4839665e)
+- 🟢 **DAG-GNN** (Python) — [`4ff8775`](https://github.com/ronikobrosly/DAG_from_GNN/commit/4ff8775f46cc626fad464e53b2002128a02c9a68)
+- ⚪️ **FCI** (Python) — [`9689c1b`](https://github.com/py-why/causal-learn/commit/9689c1bdc468847729eacf0921b76f598161ae16)
+- 🟣 **GFCI** (Java, via py-tetrad) — [`ea7cefb`](https://github.com/cmu-phil/py-tetrad/commit/ea7cefb12796d26337a0c0f2f7bd4deb470ce523)
+- ⚪️ **M3HC** (MATLAB) — [`a829193`](https://github.com/mensxmachina/M3HC/commit/a82919329608d1d6482f476873ec559b4839665e)
 
-For **DAGGNN** and **FCI**, you will find scripts that launch HPC jobs with automatic data generation on the fly.
+For **DAG-GNN** and **FCI**, you will find scripts that launch HPC jobs with automatic data generation on the fly.
 
 For **M3HC** (MATLAB) and **GFCI** (Java), only local execution scripts are provided. These require that the datasets have already been generated in advance (see Section 3).
 
