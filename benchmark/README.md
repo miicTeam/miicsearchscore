@@ -33,4 +33,4 @@ Benchmarks are provided for the following causal discovery algorithms:
 
 - Scripts can be executed locally or on a cluster using PBS or SLURM.
 - Results are saved in the `results/` subfolder, organized by experiment type and algorithm.
-- For detailed explanations of the experimental settings and metrics, refer to the main [README](https://github.com/miicTeam/miicsearchscore#benchmarks).
+- For detailed explanations of the experimental settings and metrics, refer to the main [README](../README.md#-benchmarks).
