@@ -130,7 +130,7 @@ compute_edge_deltas <- function(edge_list, adj, data, hash_table) {
       pa_union <- unique(c(pa_X, pa_Y))
       if (length(pa_union)) compute_mi(X, Y, pa_union) else 0
     } else 0
-    if(length(pa_X)==0||length(pa_Y)==0){
+    if(length(pa_X) == 0||length(pa_Y) == 0){
       score_latent <- 0
     }
     

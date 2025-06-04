@@ -2,7 +2,7 @@
 % Please edit documentation in R/edge_scoring.R
 \name{compute_edge_deltas}
 \alias{compute_edge_deltas}
-\title{Compute delta scores for edge reorientation (MIIC_search&score – Step 2)}
+\title{Compute delta scores for edge orientation}
 \usage{
 compute_edge_deltas(edge_list, adj, data, hash_table)
 }

@@ -6,7 +6,7 @@ average_degrees <- c("3", "5")
 
 # Output directory
 output_dir <- "job_scripts/miic/continuous/linear_gaussian"
-script_path <- "/data/users/nlagrang/run_miic_search_score_linear_gaussian.R"
+script_path <- "MIIC_search_and_score/continuous/linear_gaussian/run_miic_search_score_linear_gaussian.R"
 
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 

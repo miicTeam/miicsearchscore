@@ -1,0 +1,8 @@
+name: gfci_env
+dependencies:
+  - python=3.11
+  - pandas==2.2.3
+  - numpy==1.26.4
+  - pip
+   - pip:
+      - git+https://github.com/cmu-phil/py-tetrad@ea7cefb12796d26337a0c0f2f7bd4deb470ce523

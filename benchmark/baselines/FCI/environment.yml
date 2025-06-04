@@ -1,0 +1,7 @@
+name: causal_env
+dependencies:
+  - python=3.11
+  - pandas==2.2.3
+  - numpy==2.2.5
+  - scikit-learn==1.6.1
+  - causal-learn==0.1.4.1

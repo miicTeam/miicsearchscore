@@ -2,7 +2,7 @@
 % Please edit documentation in R/step1_node_score.R
 \name{apply_node_score_step_1}
 \alias{apply_node_score_step_1}
-\title{Node-level conditioning set selection and edge pruning}
+\title{Node-level conditioning set selection and edge pruning (Step 1 of MIIC_search&score)}
 \usage{
 apply_node_score_step_1(adj, data, hash_table)
 }

@@ -56,7 +56,7 @@ for (name in names) {
       "",
       "echo \"[$(date)] Launching replicate $REPLICA_ID with $NAME, samples $SAMPLE_SIZES, threads $N_THREADS\"",
       "",
-      "Rscript /mnt/beegfs/home/nlagrang/stagein/nlagrang/run_miic_search_score_categorical.R \\",
+      "Rscript /MIIC_search_and_score/categorical/normal/run_miic_search_score_categorical.R \\",
       "  \"$NAME\" \"$M_ID\" \"$SAMPLE_SIZES\" \"$N_THREADS\" \"$REPLICA_ID\""
     )
     

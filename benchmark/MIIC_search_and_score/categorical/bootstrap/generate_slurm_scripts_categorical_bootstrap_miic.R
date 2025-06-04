@@ -56,7 +56,7 @@ for (model in models) {
       "",
       "echo \"[$(date)] Launching bootstrap $B with $NAME, replicate $REPLICA_ID, samples $SAMPLE_SIZES, threads $N_THREADS\"",
       "",
-      "Rscript /mnt/beegfs/home/nlagrang/stagein/nlagrang/run_miic_search_score_categorical_bootstrap.R \\",
+      "Rscript /MIIC_search_and_score/categorical/bootstrap/run_miic_search_score_categorical_bootstrap.R \\",
       "  \"$NAME\" \"$REPLICA_ID\" \"$SAMPLE_SIZES\" \"$N_THREADS\" \"$B\""
     )
     

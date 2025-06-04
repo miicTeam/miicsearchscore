@@ -6,7 +6,7 @@ average_degrees <- c("3", "5")
 
 # Output directory
 output_dir <- "job_scripts/miic/continuous/non_linear"
-script_path <- "/data/users/nlagrang/run_miic_search_score_non_linear.R"
+script_path <- "MIIC_search_and_score/continuous/non_linear/run_miic_search_score_non_linear.R"
 
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 

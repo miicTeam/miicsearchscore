@@ -11,9 +11,14 @@ install.packages("devtools")
 # Install the package directly
 devtools::install_github("miicTeam/miicsearchscore")
 
-# Run the method on your data
+# Load the package
 library(miicsearchscore)
-adj <- run_miic_searchscore(data, n_threads = 1)
+
+# Load the example dataset
+data(nonlinear_data)
+
+# Run the method on the example data
+adj <- run_miic_searchscore(nonlinear_data, n_threads = 1)
 ```
 
 ## 🔍 Overview
@@ -34,7 +39,7 @@ To access everything (including the benchmark and simulation scripts):
 
 ```bash
 # Clone the full repository
-git clone https://github.com/nikitalagrange/miicsearchscore.git
+git clone https://github.com/miicTeam/miicsearchscore.git
 cd miicsearchscore
 ```
 
@@ -110,6 +115,7 @@ adj <- run_miic_searchscore(data, n_threads = 1)
 ```
 miicsearchscore/
 ├── R/                         # Core R source files implementing the MIIC_search&score algorithm
+├── data/                      # Package dataset (.rda), accessible via data()
 ├── man/             
 ├── benchmark/                 # Benchmarking scripts
 │   ├── MIIC_search_and_score/ # Scripts to run benchmarks for MIIC_search&score
@@ -215,7 +221,7 @@ All output graphs are saved automatically in the `results/` directory.
 
 ### 📦 3. (Optional) Generate data for external baseline algorithms
 
-To run other benchmark algorithms (developed in different languages such as **Python** or **Matlab**), you'll need to generate the corresponding datasets from the simulated graphs.
+To run other benchmark algorithms (developed in different languages such as **Python** or **MATLAB**), you'll need to generate the corresponding datasets from the simulated graphs.
 
 To generate all types of data at once (continuous, non-linear, categorical, etc.), use:
 
@@ -239,16 +245,16 @@ All output datasets are saved automatically in the `simulated_data/` directory.
 
 ### 🧪 4. (Optional) Run other baseline algorithms
 
-The `baselines/` directory contains benchmarking scripts for external algorithms implemented in Python, Matlab, and Java. These include:
+The `baselines/` directory contains benchmarking scripts for external algorithms implemented in Python, MATLAB, and Java. These include:
 
-- **DAGGNN** (Python) — https://github.com/ronikobrosly/DAG_from_GNN
-- **FCI** (Python) — https://github.com/py-why/causal-learn
-- **GFCI** (Java, via py-tetrad) — https://github.com/cmu-phil/py-tetrad
-- **M3HC** (Matlab) — https://github.com/mensxmachina/M3HC
+- **DAGGNN** (Python) — [`4ff8775`](https://github.com/ronikobrosly/DAG_from_GNN/commit/4ff8775f46cc626fad464e53b2002128a02c9a68)
+- **FCI** (Python) — [`9689c1b`](https://github.com/py-why/causal-learn/commit/9689c1bdc468847729eacf0921b76f598161ae16)
+- **GFCI** (Java, via py-tetrad) — [`ea7cefb`](https://github.com/cmu-phil/py-tetrad/commit/ea7cefb12796d26337a0c0f2f7bd4deb470ce523)
+- **M3HC** (MATLAB) — [`a829193`] (https://github.com/mensxmachina/M3HC/commit/a82919329608d1d6482f476873ec559b4839665e)
 
 For **DAGGNN** and **FCI**, you will find scripts that launch HPC jobs with automatic data generation on the fly.
 
-For **M3HC** (Matlab) and **GFCI** (Java), only local execution scripts are provided. These require that the datasets have already been generated in advance (see Section 3).
+For **M3HC** (MATLAB) and **GFCI** (Java), only local execution scripts are provided. These require that the datasets have already been generated in advance (see Section 3).
 
 📁 **Output directory**
 
