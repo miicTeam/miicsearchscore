@@ -9,12 +9,8 @@
 </h1>
 
 <p align="center">
-  <a href="https://icml.cc/virtual/2025/poster/45267">
-    <img src="https://img.shields.io/badge/ICML-2025-6EB941.svg" alt="ICML 2025">
-  </a>
-    <a href="LICENSE.md">
-    <img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg" alt="GPL-3.0 License">
-  </a>
+  <a href="https://icml.cc/virtual/2025/poster/45267"><img src="https://img.shields.io/badge/ICML-2025-6EB941.svg" alt="ICML 2025"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg" alt="GPL-3.0 License"></a>
 </p>
 
 
