@@ -1,4 +1,23 @@
-# miicsearchscore: An Efficient Search-and-Score Algorithm for Ancestral Graphs using Multivariate Information Scores
+<p align="center">
+  <a href="https://icml.cc/virtual/2025/poster/45267">
+       <img src="https://icml.cc/static/core/img/ICML-logo.svg" alt="ICML logo" width="100" style="background:white; padding:5px; border-radius:6px;" />
+  </a>
+</p>
+
+<h1 align="center">
+  miicsearchscore: An Efficient Search-and-Score Algorithm for Ancestral Graphs using Multivariate Information Scores
+</h1>
+
+<p align="center">
+  <a href="https://icml.cc/virtual/2025/poster/45267">
+    <img src="https://img.shields.io/badge/ICML-2025-6EB941.svg" alt="ICML 2025">
+  </a>
+    <a href="LICENSE.md">
+    <img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg" alt="GPL-3.0 License">
+  </a>
+</p>
+
+
 
 This repository provides an R implementation of the **MIIC_search&score** algorithm, introduced in our **ICML 2025** paper, for causal discovery in the presence of latent variables. The algorithm combines a theoretical likelihood decomposition for ancestral graphs with a practical, efficient two-step search-and-score procedure based on multivariate information scores.
 
