@@ -307,6 +307,20 @@ Rscript utils/toy_model.R
 If you use this code, please cite:
 
 ```bibtex
+@InProceedings{pmlr-v267-lagrange25a,
+  title     = {An Efficient Search-and-Score Algorithm for Ancestral Graphs using Multivariate Information Scores for Complex Non-linear and Categorical Data},
+  author    = {Lagrange, Nikita and Isambert, Herve},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning},
+  pages     = {32164--32187},
+  year      = {2025},
+  editor    = {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+  volume    = {267},
+  series    = {Proceedings of Machine Learning Research},
+  month     = {13--19 Jul},
+  publisher = {PMLR},
+  pdf       = {https://raw.githubusercontent.com/mlresearch/v267/main/assets/lagrange25a/lagrange25a.pdf},
+  url       = {https://proceedings.mlr.press/v267/lagrange25a.html}
+}
 ```
 
 ## 👥 Authors
